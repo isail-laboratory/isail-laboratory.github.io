@@ -1,0 +1,268 @@
+/* .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #007bff;
+    color: white;
+} */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap to a new line */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: none; /* Removes the border for a cleaner look */
+    border-radius: 25px; /* Makes buttons more rounded */
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    font-size: 15px;
+    font-weight: 500; /* Slightly bolder text */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Adds shadow transition */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.filter-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.filter-btn.active {
+    background-color: #28a745; /* Green color for active state */
+    color: white;
+}
+
+.publications {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.publication-card {
+    position: relative; /* Enables positioning of the pseudo-element */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    display: none; /* Initially hidden */
+    --bar-color: #ff5f03;
+}
+
+.publication-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px; /* Width of the vertical bar */
+    height: 100%;
+    background-color: var(--bar-color);; /* Color of the vertical bar */
+    border-radius: 8px 0 0 8px; /* Rounds the corners of the bar */
+}
+
+.publication-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.card-content {
+    flex: 1; /* Takes remaining space */
+    padding-right: 20px; /* Adds space between content and image */
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    /* color: #007bff; */
+    color: #333;
+}
+
+.authors, .venue {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.publication-card.active {
+    display: block; /* Show active publication cards */
+}
+
+
+
+.publication-card.journal {
+    --bar-color: #0d5f1f;
+}
+
+.publication-card.tutorial-workshop {
+    --bar-color: #8832d8;
+}
+
+
+
+.tag {
+    display: inline-block; /* Makes the box fit inline with the text */
+    padding: 4px 6px; /* Adds some internal spacing */
+    background-color: #11ebbb83; /* Light background color */
+    color: #333; /* Text color */
+    font-size: 11pt; /* Slightly smaller font size */
+    border-radius: 8px; /* Rounds the corners */
+    margin-left: 8px; /* Adds spacing from the previous text */
+    position: relative;
+    top: -1pt;
+}
+
+
+.tag.bandit {
+    background-color: #bb562e;
+    color: white;
+}
+.tag.bandit::before {
+    content: "bandit";
+}
+
+.tag.causal {
+    background-color: #d37638;
+    color: white;
+}
+.tag.causal::before {
+    content: "causal";
+}
+
+.tag.data-mining {
+    background-color: #d39538;
+    color: white;
+}
+.tag.data-mining::before {
+    content: "data mining";
+}
+
+.tag.efficiency {
+    background-color: #d3b638;
+    color: white;
+}
+.tag.efficiency::before {
+    content: "efficiency";
+}
+
+.tag.generative {
+    background-color: #d1d418;
+    color: white;
+}
+.tag.generative::before {
+    content: "generative";
+}
+
+.tag.graph-representation-learning {
+    background-color: #b0be36;
+    color: white;
+}
+.tag.graph-representation-learning::before {
+    content: "graph representation learning";
+}
+
+.tag.graph-learning {
+    background-color: #bdc913;
+    color: white;
+}
+.tag.graph-learning::before {
+    content: "graph learning";
+}
+
+.tag.heterogeneous-ml {
+    background-color: #79c911;
+    color: white;
+}
+.tag.heterogeneous-ml::before {
+    content: "heterogeneous ML";
+}
+
+.tag.knowledge-graph {
+    background-color: #207a42;
+    color: white;
+}
+.tag.knowledge-graph::before {
+    content: "knowledge graph";
+}
+
+.tag.llm {
+    background-color: #33b1a6;
+    color: white;
+}
+.tag.llm::before {
+    content: "LLM";
+}
+
+.tag.multimodal {
+    background-color: #386eb4;
+    color: white;
+}
+.tag.multimodal::before {
+    content: "multimodal";
+}
+
+.tag.optimization {
+    background-color: #5641cc;
+    color: white;
+}
+.tag.optimization::before {
+    content: "optimization";
+}
+
+.tag.rare-category {
+    background-color: #7641cc;
+    color: white;
+}
+.tag.rare-category::before {
+    content: "rare category";
+}
+
+.tag.recommendation {
+    background-color: #8241cc;
+    color: white;
+}
+.tag.recommendation::before {
+    content: "recommendation";
+}
+
+.tag.self-supervised {
+    background-color: #76459e;
+    color: white;
+}
+.tag.self-supervised::before {
+    content: "self-supervised";
+}
+
+.tag.time-series {
+    background-color: #9039a1;
+    color: white;
+}
+.tag.time-series::before {
+    content: "time series";
+}
+
+.tag.trustworthy {
+    background-color: #a13999;
+    color: white;
+}
+.tag.trustworthy::before {
+    content: "trustworthy";
+}

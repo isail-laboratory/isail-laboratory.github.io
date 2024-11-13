@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <title>iDEA-iSAIL Research Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website for iDEA-iSAIL Lab, UIUC.">
+    <meta name="keywords" content="iDEA-iSAIL,Hanghang Tong,Jingrui He,UIUC,computer science,PhD,University of Illinois Urbana-Champaign">
+
+    <link rel="shortcut icon" href="static/favicon.ico">
+    <!-- css -->
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="static/vendor/aos/aos.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="static/css/style.css" rel="stylesheet" />
+    <link href="static/css/publications.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header id="header" class="d-flex align-items-center" style="background-color: #002855;">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="index.html"><img src="static/img/logo/uiuc.png" alt="" width="200"></a></h1>
+
+            <nav id="navbar" class="navbar" style="color: #F8F8F8;">
+                <ul>
+                    <li><a class="nav-link" href="index.html" style="color: inherit">Home</a></li>
+                    <li><a class="nav-link" href="people.html" style="color: inherit">People</a></li>
+                    <li><a class="nav-link active" href="publications.html" style="color: inherit">Publications</a></li>
+                    <li class="dropdown"><a href="activities.html" class="" style="color: inherit"><span>Activities</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="activities.html#teaching">Teaching</a></li>
+							<li><a href="activities.html#talks">Talks</a></li>
+							<li><a href="activities.html#tutorials">Tutorials</a></li>
+							<li><a href="activities.html#workshops">Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="https://github.com/iDEA-iSAIL-Lab-UIUC" target="_blank" style="color: inherit">Open-Source</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+
+
+    <section class="content" style="margin-bottom: -20pt;">
+        <div class="container">
+            <!-- <h3 id="future"> To Future Students</h3> -->
+            <p style="hyphens: auto;">
+                For a complete list, please refer to the Google Scholar pages of <a href="https://scholar.google.com/citations?user=RaINcuUAAAAJ&hl=zh-CN", target="_blank" style="color: #73a2f9;">Prof. Tong</a> 
+                and <a href="https://scholar.google.com/citations?user=hXpZynkAAAAJ&hl=zh-CN", target="_blank" style="color: #73a2f9;"> Prof. He</a>.
+            </p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+
+            <section class="filters">
+                <!-- Filter Icons -->
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tutorial-workshop">Tutorial or Workshop</button>
+                <button class="filter-btn" data-filter="active-learning">Active Learning</button>
+                <button class="filter-btn" data-filter="data-mining">Data Mining</button>
+                <button class="filter-btn" data-filter="data-centric">Data-Centric AI</button>
+                <button class="filter-btn" data-filter="efficiency">Efficiency</button>
+                <button class="filter-btn" data-filter="fairness">Fairness</button>
+                <button class="filter-btn" data-filter="generative">Generative Model</button>
+                <button class="filter-btn" data-filter="gnn">Geometric ML</button>
+                <button class="filter-btn" data-filter="heterogeneous-ml">Heterogeneous ML</button>
+                <button class="filter-btn" data-filter="knowledge-graph">Knowledge Graph</button>
+                <button class="filter-btn" data-filter="llm">Large Language Model</button>
+                <button class="filter-btn" data-filter="multimodal">Multimodal</button>
+                <button class="filter-btn" data-filter="privacy">Privacy</button>
+                <button class="filter-btn" data-filter="rare-category">Rare Category</button>
+                <button class="filter-btn" data-filter="recommendation">Recommendation</button>
+                <button class="filter-btn" data-filter="robustness">Robustness</button>
+                <button class="filter-btn" data-filter="self-supervised">Self-Supervised</button>
+                <button class="filter-btn" data-filter="time-series">Time Series</button>
+            </section>
+
+            
+            <section class="publications">
+                <!-- example publication -->
+                <!-- <div class="publication-card ai llm" style="--bar-color: #ff5f03;">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Paper 1</h3>
+                        <p class="authors">Author A, Author B, Author C</p>
+                        <p class="venue">ICML 2024</p>
+                    </div>
+                </div> -->
+                <h3>2024</h3>
+
+                <!-- <div class="publication-card recommendation privacy">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Co-clustering for Federated Recommender System <div class="tag recommendation"></div></h3>
+                        <p class="authors"> Xinrui He, Shuo Liu, Jacky Keung, Jingrui He</p>
+                        <p class="venue">The International World Wide Web Conference 2024 <i>(WWW 2024)</i></p>
+                    </div>
+                </div> -->
+
+                <div class="publication-card time-series robustness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">BackTime: Backdoor Attacks on Multivariate Time Series Forecasting<div class="tag time-series"></div><div class="tag trustworthy"></div></h3>
+                        <p class="authors">Xiao Lin, Zhining Liu, Dongqi Fu, Ruizhong Qiu, Hanghang Tong</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 38: Annual Conference on Neural Information Processing Systems 2024, Vancouver, Canada <i>(NeurIPS 2024 Spotlight)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card generative gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Discrete-state Continuous-time Diffusion for Graph Generation<div class="tag generative"></div><div class="tag graph-learning"></div></h3>
+                        <p class="authors">Zhe Xu, Ruizhong Qiu, Yuzhong Chen, Huiyuan Chen, Xiran Fan, Menghai Pan, Zhichen Zeng, Mahashweta Das, Hanghang Tong</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 38: Annual Conference on Neural Information Processing Systems 2024, Vancouver, Canada <i>(NeurIPS 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card active-learning">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">PageRank Bandits for Link Prediction<div class="tag bandit"></div><div class="tag graph-learning"></div></h3>
+                        <p class="authors">Yikun Ban, Jiaru Zou, Zihao Li, Yunzhe Qi, Dongqi Fu, Jian Kang, Hanghang Tong, Jingrui He</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 38: Annual Conference on Neural Information Processing Systems 2024, Vancouver, Canada <i>(NeurIPS 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card active-learning">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Robust Neural Contextual Bandit against Adversarial Corruptions<div class="tag bandit"></div><div class="tag trustworthy"></div></h3>
+                        <p class="authors">Yunzhe Qi, Yikun Ban, Arindam Banerjee, Jingrui He</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 38: Annual Conference on Neural Information Processing Systems 2024, Vancouver, Canada <i>(NeurIPS 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Temporal Graph Neural Tangent Kernel with Graphon-Guaranteed<div class="tag graph-learning"></div></h3>
+                        <p class="authors">Katherine Tieu, Dongqi Fu, Yada Zhu, Hendrik Hamann, Jingrui He</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 38: Annual Conference on Neural Information Processing Systems 2024, Vancouver, Canada <i>(NeurIPS 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card time-series">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Towards Editing Time Series<div class="tag time-series"></div></h3>
+                        <p class="authors">Baoyu Jing, Shuqi Gu, Tianyu Chen, Zhiyu Yang, Dongsheng Li, Jingrui He, Kan Ren</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 38: Annual Conference on Neural Information Processing Systems 2024, Vancouver, Canada <i>(NeurIPS 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card journal data-mining rare-category heterogeneous-ml">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Rare Category Analysis for Complex Data: A Review<div class="tag data-mining"></div><div class="tag heterogeneous-ml"></div><div class="tag rare-category"></div></h3>
+                        <p class="authors">	Dawei Zhou, Jingrui He</p>
+                        <p class="venue">ACM Computing Surveys</p>
+                    </div>
+                </div>
+
+                <div class="publication-card data-mining">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Hierarchical Multi-Marginal Optimal Transport for Network Alignment<div class="tag data-mining"></div></h3>
+                        <p class="authors">	Zhichen Zeng, Boxin Du, Si Zhang, Yinglong Xia, Zhining Liu, Hanghang Tong</p>
+                        <p class="venue">Thirty-Eighth AAAI Conference on Artificial Intelligence <i>(AAAI 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Sterling: Synergistic Representation Learning on Bipartite Graphs<div class="tag graph-representation-learning"></div></h3>
+                        <p class="authors">	Baoyu Jing, Yuchen Yan, Kaize Ding, Chanyoung Park, Yada Zhu, Huan Liu, Hanghang Tong</p>
+                        <p class="venue">Thirty-Eighth AAAI Conference on Artificial Intelligence <i>(AAAI 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card journal gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Generalized few-shot node classification: toward an uncertainty-based solution<div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Zhe Xu, Kaize Ding, Yu-Xiong Wang, Huan Liu, Hanghang Tong</p>
+                        <p class="venue">Knowledge and Information Systems</p>
+                    </div>
+                </div>
+
+                <div class="publication-card knowledge-graph llm">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Conversational Question Answering with Language Models Generated Reformulations over Knowledge Graph<div class="tag knowledge-graph"></div><div class="tag llm"></div></h3>
+                        <p class="authors"> Lihui Liu, Blaine Hill, Boxin Du, Fei Wang, Hanghang Tong</p>
+                        <p class="venue">Association for Computational Linguistics 2024, Bangkok, Thailand<i> (ACL 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card fairness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Group Fairness via Group Consensus<div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Eunice Chan, Zhining Liu, Ruizhong Qiu, Yuheng Zhang, Ross Maciejewski, Hanghang Tong</p>
+                        <p class="venue">The 2024 ACM Conference on Fairness, Accountability, and Transparency, Rio de Janeiro, Brazil<i> (FAccT 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card privacy">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">BOBA: Byzantine-Robust Federated Learning with Label Skewness<div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Wenxuan Bao, Jun Wu, Jingrui He</p>
+                        <p class="venue">International Conference on Artificial Intelligence and Statistics 2024, Palau de Congressos, Valencia, Spain<i> (AISTATS 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card fairness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Class-Imbalanced Graph Learning without Class Rebalancing<div class="tag graph-learning"></div><div class="tag trustworthy"></div></h3>
+                        <p class="authors">Zhining Liu, Ruizhong Qiu, Zhichen Zeng, Hyunsik Yoo, David Zhou, Zhe Xu, Yada Zhu, Kommy Weldemariam, Jingrui He, Hanghang Tong</p>
+                        <p class="venue">The 41st International Conference on Machine Learning, Vienna, Austria <i>(ICML 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card efficiency">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">
+                            Gradient Compressed Sensing: A Query-Efficient Gradient Estimator for High-Dimensional Zeroth-Order Optimization
+                            <div class="tag efficiency"></div><div class="tag optimization"></div>
+                        </h3>
+                        <p class="authors">Zhining Liu, Ruizhong Qiu, Zhichen Zeng, Hyunsik Yoo, David Zhou, Zhe Xu, Yada Zhu, Kommy Weldemariam, Jingrui He, Hanghang Tong</p>
+                        <p class="venue">The 41st International Conference on Machine Learning, Vienna, Austria <i>(ICML 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Graph Mixup on Approximate Gromov-Wasserstein Geodesics<div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Zhichen Zeng, Ruizhong Qiu, Zhe Xu, Zhining Liu, Yuchen Yan, Tianxin Wei, Lei Ying, Jingrui He</p>
+                        <p class="venue">The 41st International Conference on Machine Learning, Vienna, Austria <i>(ICML 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">SLOG: An Inductive Spectral Graph Neural Network Beyond Polynomial Filter<div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Haobo Xu, Yuchen Yan, Dingsu Wang, Zhe Xu, Zhichen Zeng, Tarek F. Abdelzaher, Jiawei Han, Hanghang Tong</p>
+                        <p class="venue">The 41st International Conference on Machine Learning, Vienna, Austria <i>(ICML 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card fairness generative gnn ">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Fairgen: Towards Fair Graph Generation<div class="tag graph-learning"></div><div class="tag generative"></div><div class="tag trustworthy"></div></h3>
+                        <p class="authors">Lecheng Zheng, Dawei Zhou, Hanghang Tong, Jiejun Xu, Yada Zhu, Jingrui He</p>
+                        <p class="venue">40th IEEE International Conference on Data Engineering, Utrecht, The Netherlands <i>(ICDE 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card fairness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">AIM: Attributing, Interpreting, Mitigating Data Unfairness <div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Zhining Liu, Ruizhong Qiu, Zhichen Zeng, Yada Zhu, Hendrik F. Hamann, Hanghang Tong</p>
+                        <p class="venue">The 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Barcelona, Spain <i>(KDD 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card heterogeneous-ml">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Distributional Network of Networks for Modeling Data Heterogeneity <div class="tag heterogeneous-ml"></div></h3>
+                        <p class="authors"> Jun Wu, Jingrui He, Hanghang Tong</p>
+                        <p class="venue">The 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Barcelona, Spain <i>(KDD 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card active-learning">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Meta Clustering of Neural Bandits <div class="tag bandit"></div></h3>
+                        <p class="authors"> Yikun Ban, Yunzhe Qi, Tianxin Wei, Lihui Liu, Jingrui He</p>
+                        <p class="venue">The 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Barcelona, Spain <i>(KDD 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card tutorial-workshop self-supervised">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Heterogeneous Contrastive Learning for Foundation Models and Beyond <div class="tag heterogeneous-ml"></div><div class="tag self-supervised"></div></h3>
+                        <p class="authors">	Lecheng Zheng, Baoyu Jing, Zihao Li, Hanghang Tong, Jingrui He</p>
+                        <p class="venue">Tutorial. The 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Barcelona, Spain <i>(KDD 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card knowledge-graph">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">SpherE: Expressive and Interpretable Knowledge Graph Embedding for Set Retrieval <div class="tag knowledge-graph"></div></h3>
+                        <p class="authors">	Zihao Li, Yuyi Ao, Jingrui He</p>
+                        <p class="venue">The 47th International ACM SIGIR Conference on Research and Development in Information Retrieval, Washington DC, USA <i>(SIGIR 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card fairness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">FairIF: Boosting Fairness in Deep Learning via Influence Functions with Validation Set Sensitive Attributes <div class="tag trustworthy"></div></h3>
+                        <p class="authors"> Haonan Wang, Ziwei Wu, Jingrui He</p>
+                        <p class="venue">The 17th ACM International Conference on Web Search and Data Mining, Merida, Mexico <i>(WSDM 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card knowledge-graph">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Ginkgo-P: General Illustrations of Knowledge Graphs for Openness as a Platform <div class="tag knowledge-graph"></div></h3>
+                        <p class="authors"> Blaine Hill, Lihui Liu, Hanghang Tong</p>
+                        <p class="venue">The 17th ACM International Conference on Web Search and Data Mining, Merida, Mexico <i>(WSDM 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card recommendation privacy">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Co-clustering for Federated Recommender System <div class="tag recommendation"></div></h3>
+                        <p class="authors"> Xinrui He, Shuo Liu, Jacky Keung, Jingrui He</p>
+                        <p class="venue">The International World Wide Web Conference 2024, Singapore <i>(WWW 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card fairness recommendation">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Ensuring User-side Fairness in Dynamic Recommender Systems <div class="tag recommendation"></div><div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Hyunsik Yoo, Zhichen Zeng, Jian Kang, Ruizhong Qiu, David Zhou, Zhining Liu, Fei Wang, Charlie Xu, Eunice Chan, Hanghang Tong</p>
+                        <p class="venue">The International World Wide Web Conference 2024, Singapore <i>(WWW 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card multimodal">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">MULAN: Multi-modal Causal Structure Learning and Root Cause Analysis for Microservice Systems <div class="tag multimodal"></div><div class="tag causal"></div></h3>
+                        <p class="authors">	Lecheng Zheng, Zhengzhang Chen, Jingrui He, Haifeng Chen</p>
+                        <p class="venue">The International World Wide Web Conference 2024, Singapore <i>(WWW 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card tutorial-workshop active-learning recommendation">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Neural Contextual Bandits for Personalized Recommendation<div class="tag bandit"></div><div class="tag recommendation"></div></h3>
+                        <p class="authors"> Yikun Ban, Yunzhe Qi, Jingrui He</p>
+                        <p class="venue">Tutorial. The International World Wide Web Conference 2024, Singapore <i>(WWW 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card tutorial-workshop knowledge-graph">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">New Frontiers of Knowledge Graph Reasoning: Recent Advances and Future Trends<div class="tag knowledge-graph"></div></h3>
+                        <p class="authors"> Lihui Liu, Zihao Wang, Jiaxin Bai, Yangqiu Song, Hanghang Tong</p>
+                        <p class="venue">Tutorial. The International World Wide Web Conference 2024, Singapore <i>(WWW 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">PaCEr: Network Embedding From Positional to Structural<div class="tag graph-representation-learning"></div></h3>
+                        <p class="authors">	Yuchen Yan, Yongyi Hu, Qinghai Zhou, Lihui Liu, Zhichen Zeng, Yuzhong Chen, Menghai Pan, Huiyuan Chen, Mahashweta Das, Hanghang Tong</p>
+                        <p class="venue">The International World Wide Web Conference 2024, Singapore <i>(WWW 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn fairness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">TrustLOG: The Second Workshop on Trustworthy Learning on Graphs<div class="tag graph-learning"></div><div class="tag trustworthy"></div></h3>
+                        <p class="authors"> Jingrui He, Jian Kang, Fatemeh Nargesian, Haohui Wang, An Zhang, Dawei Zhou</p>
+                        <p class="venue">Workshop. The International World Wide Web Conference 2024, Singapore <i>(WWW 2024)</i></p>
+                    </div>
+                </div>
+
+                <!-- <div class="publication-card active-learning">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Contextual Bandits with Online Neural Regression<div class="tag bandit"></div></h3>
+                        <p class="authors">	Rohan Deb, Yikun Ban, Shiliang Zuo, Jingrui He, Arindam Banerjee</p>
+                        <p class="venue">The Twelfth International Conference on Learning Representations, Vienna, Austria<i>(ICLR 2024)</i></p>
+                    </div>
+                </div> -->
+
+                <div class="publication-card fairness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Deceptive Fairness Attacks on Graphs via Meta Learning<div class="tag graph-learning"></div><div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Jian Kang, Yinglong Xia, Ross Maciejewski, Jiebo Luo, Hanghang Tong</p>
+                        <p class="venue">The 12th International Conference on Learning Representations, Vienna, Austria <i>(ICLR 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card active-learning">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Neural Active Learning Beyond Bandits<div class="tag bandit"></div></h3>
+                        <p class="authors">	Yikun Ban, Ishika Agarwal, Ziwei Wu, Yada Zhu, Kommy Weldemariam, Hanghang Tong, Jingrui He</p>
+                        <p class="venue">The 12th International Conference on Learning Representations, Vienna, Austria <i>(ICLR 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">VCR-Graphormer: A Mini-batch Graph Transformer via Virtual Connections<div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Dongqi Fu, Zhigang Hua, Yan Xie, Jin Fang, Si Zhang, Kaan Sancak, Hao Wu, Andrey Malevich, Jingrui He, Bo Long</p>
+                        <p class="venue">The 12th International Conference on Learning Representations, Vienna, Austria <i>(ICLR 2024)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card multimodal recommendation">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Towards Unified Multi-Modal Personalization: Large Vision-Language Models for Generative Recommendation and Beyond<div class="tag multimodal"></div><div class="tag recommendation"></div></h3>
+                        <p class="authors">	Tianxin Wei, Bowen Jin, Ruirui Li, Hansi Zeng, Zhengyang Wang, Jianhui Sun, Qingyu Yin, Hanqing Lu, Suhang Wang, Jingrui He, Xianfeng Tang</p>
+                        <p class="venue">The 12th International Conference on Learning Representations, Vienna, Austria <i>(ICLR 2024)</i></p>
+                    </div>
+                </div>
+
+
+                <h3 style="margin-top: 10pt;">2023</h3>
+
+                <div class="publication-card privacy robustness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Adaptive Test-Time Personalization for Federated Learning<div class="tag trustworthy"></div></h3>
+                        <p class="authors"> Wenxuan Bao, Tianxin Wei, Haohan Wang, Jingrui He</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 37: Annual Conference on Neural Information Processing Systems 2023, New Orleans, LA, USA <i>(NeurIPS 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">From Trainable Negative Depth to Edge Heterophily in Graphs<div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Yuchen Yan, Yuzhong Chen, Huiyuan Chen, Minghua Xu, Mahashweta Das, Hao Yang, Hanghang Tong</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 37: Annual Conference on Neural Information Processing Systems 2023, New Orleans, LA, USA <i>(NeurIPS 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card robustness gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Graph-Structured Gaussian Processes for Transferable Graph Learning<div class="tag trustworthy"></div><div class="tag graph-learning"></div></h3>
+                        <p class="authors"> Jun Wu, Lisa Ainsworth, Andrew Leakey, Haixun Wang, Jingrui He</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 37: Annual Conference on Neural Information Processing Systems 2023, New Orleans, LA, USA <i>(NeurIPS 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card active-learning">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Meta-Learning with Neural Bandit Scheduler<div class="tag bandit"></div></h3>
+                        <p class="authors">	Yunzhe Qi, Yikun Ban, Tianxin Wei, Jiaru Zou, Huaxiu Yao, Jingrui He</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 37: Annual Conference on Neural Information Processing Systems 2023, New Orleans, LA, USA <i>(NeurIPS 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Reconciling Competing Sampling Strategies of Network Embedding<div class="tag graph-representation-learning"></div></h3>
+                        <p class="authors">	Yuchen Yan, Baoyu Jing, Lihui Liu, Ruijie Wang, Jinning Li, Tarek F. Abdelzaher, Hanghang Tong</p>
+                        <p class="venue">Advances in Neural Information Processing Systems 37: Annual Conference on Neural Information Processing Systems 2023, New Orleans, LA, USA <i>(NeurIPS 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card fairness gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">BeMap: Balanced Message Passing for Fair Graph Neural Network<div class="tag trustworthy"></div><div class="tag graph-learning"></div></h3>
+                        <p class="authors"> Xiao Lin, Jian Kang, Weilin Cong, Hanghang Tong</p>
+                        <p class="venue">The Second Learning on Graphs Conference <i>(LoG 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card journal data-mining trustworthy efficiency">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Adversarial Attacks on Multi-Network Mining: Problem Definition and Fast Solutions
+                            <div class="tag data-mining"></div><div class="tag trustworthy"></div><div class="tag efficiency"></div></h3>
+                        <p class="authors">	Qinghai Zhou, Liangyue Li, Nan Cao, Lei Ying, Hanghang Tong</p>
+                        <p class="venue">IEEE Transactions on Knowledge and Data Engineering <i>(TKDE 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn heterogeneous-ml robustness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Non-IID Transfer Learning on Graphs
+                            <div class="tag heterogeneous-ml"></div><div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Jun Wu, Jingrui He, Elizabeth A. Ainsworth</p>
+                        <p class="venue">Thirty-Seventh AAAI Conference on Artificial Intelligence <i>(AAAI 2023)</i></p>
+                    </div>
+                </div>
+                
+                <div class="publication-card journal robustness heterogeneous-ml">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">A Unified Framework for Adversarial Attacks on Multi-Source Domain Adaptation<div class="tag heterogeneous-ml"></div><div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Jun Wu, Jingrui He</p>
+                        <p class="venue">IEEE Transactions on Knowledge and Data Engineering <i>(TKDE 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card journal data-mining trustworthy data-centric">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Privacy-Preserving Graph Machine Learning from Data to Computation: A Survey
+                            <div class="tag graph-learning"></div><div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Dongqi Fu, Wenxuan Bao, Ross Maciejewski, Hanghang Tong, Jingrui He</p>
+                        <p class="venue">SIGKDD Explorations</p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Geometric Matrix Completion via Sylvester Multi-Graph Neural Network<div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Boxin Du, Changhe Yuan, Fei Wang, Hanghang Tong</p>
+                        <p class="venue">The 32nd ACM International Conference on Information and Knowledge Management, Birmingham, United Kingdom <i>(CIKM 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn rare-category">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Learning Node Abnormality with Weak Supervision<div class="tag graph-learning"></div><div class="tag rare-category"></div></h3>
+                        <p class="authors"> Qinghai Zhou, Kaize Ding, Huan Liu, Hanghang Tong</p>
+                        <p class="venue">The 32nd ACM International Conference on Information and Knowledge Management, Birmingham, United Kingdom <i>(CIKM 2023)</i></p>
+                    </div>
+                </div>
+                
+                <div class="publication-card generative recommendation self-supervised">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Robust Basket Recommendation via Noise-tolerated Graph Contrastive Learning
+                            <div class="tag recommendation"></div><div class="tag trustworthy"></div><div class="tag self-supervised"></div><div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Xinrui He, Tianxin Wei, Jingrui He</p>
+                        <p class="venue">The 32nd ACM International Conference on Information and Knowledge Management, Birmingham, United Kingdom <i>(CIKM 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card generative">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Generative Graph Dictionary Learning<div class="tag generative"></div><div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Zhichen Zeng, Ruike Zhu, Yinglong Xia, Hanqing Zeng, Hanghang Tong</p>
+                        <p class="venue">The 41st International Conference on Machine Learning, Honolulu, Hawaii, USA <i>(ICML 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card efficiency llm">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">NTK-approximating MLP Fusion for Efficient Language Model Fine-tuning<div class="tag efficiency"></div><div class="tag llm"></div></h3>
+                        <p class="authors"> Tianxin Wei, Zeming Guo, Yifan Chen, Jingrui He</p>
+                        <p class="venue">The 41st International Conference on Machine Learning, Honolulu, Hawaii, USA <i>(ICML 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card privacy">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Optimizing the Collaboration Structure in Cross-Silo Federated Learning<div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Wenxuan Bao, Haohan Wang, Jun Wu, Jingrui He</p>
+                        <p class="venue">The 41st International Conference on Machine Learning, Honolulu, Hawaii, USA <i>(ICML 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card active-learning gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Graph Neural Bandits<div class="tag bandit"></div><div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Yunzhe Qi, Yikun Ban, Jingrui He</p>
+                        <p class="venue">The 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Long Beach, CA, USA <i>(KDD 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card data-centric">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Kernel Ridge Regression-Based Graph Dataset Distillation<div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Zhe Xu, Yuzhong Chen, Qinghai Zhou, Yuhang Wu, Menghai Pan, Hao Yang, Hanghang Tong</p>
+                        <p class="venue">The 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Long Beach, CA, USA <i>(KDD 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card tutorial-workshop knowledge-graph">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Knowledge Graph Reasoning and Its Applications<div class="tag knowledge-graph"></div></h3>
+                        <p class="authors">Lihui Liu, Hanghang Tong</p>
+                        <p class="venue">Tutorial. The 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Long Beach, CA, USA <i>(KDD 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Node Classification Beyond Homophily: Towards a General Solution<div class="tag graph-learning"></div><div class="tag time-series"></div></h3>
+                        <p class="authors">	Zhe Xu, Yuzhong Chen, Qinghai Zhou, Yuhang Wu, Menghai Pan, Hao Yang, Hanghang Tong</p>
+                        <p class="venue">The 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Long Beach, CA, USA <i>(KDD 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card privacy">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Personalized Federated Learning with Parameter Propagation<div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Jun Wu, Wenxuan Bao, Elizabeth A. Ainsworth, Jingrui He</p>
+                        <p class="venue">The 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Long Beach, CA, USA <i>(KDD 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card generative">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Reconstructing Graph Diffusion History from a Single Snapshot<div class="tag generative"></div><div class="tag causal"></div></h3>
+                        <p class="authors">	Ruizhong Qiu, Dingsu Wang, Lei Ying, H. Vincent Poor, Yifang Zhang, Hanghang Tong</p>
+                        <p class="venue">The 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Long Beach, CA, USA <i>(KDD 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card tutorial-workshop gnn">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">The 3rd Workshop on Graph Learning Benchmarks (GLB 2023)<div class="tag graph-learning"></div></h3>
+                        <p class="authors">	Jiaqi Ma, Jiong Zhu, Yuxiao Dong, Danai Koutra, Jingrui He, Qiaozhu Mei, Anton Tsitsulin, Xingjian Zhang, Marinka Zitnik</p>
+                        <p class="venue">Workshop. The 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Long Beach, CA, USA <i>(KDD 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card tutorial-workshop robustness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Trustworthy Transfer Learning: Transferability and Trustworthiness<div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Jun Wu, Jingrui He</p>
+                        <p class="venue">Tutorial. The 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Long Beach, CA, USA <i>(KDD 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card tutorial-workshop gnn time-series">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Natural and Artificial Dynamics in GNNs: A Tutorial<div class="tag graph-learning"></div> <div class="tag time-series"></div></h3>
+                        <p class="authors">Dongqi Fu, Zhe Xu, Hanghang Tong, Jingrui He</p>
+                        <p class="venue">Tutorial. The 16th ACM International Conference on Web Search and Data Mining, Singapore <i>(WSDM 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card efficiency">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Everything Evolves in Personalized PageRank<div class="tag efficiency"></div></h3>
+                        <p class="authors">	Zihao Li, Dongqi Fu, Jingrui He</p>
+                        <p class="venue">The International World Wide Web Conference 2023, Austin, TX, USA <i>(WWW 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card gnn fairness">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Fairness-Aware Clique-Preserving Spectral Clustering of Temporal Graphs<div class="tag graph-learning"></div><div class="tag trustworthy"></div></h3>
+                        <p class="authors">	Dongqi Fu, Dawei Zhou, Ross Maciejewski, Arie Croitoru, Marcus Boyd, Jingrui He</p>
+                        <p class="venue">The International World Wide Web Conference 2023, Austin, TX, USA <i>(WWW 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card knowledge-graph">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">Knowledge Graph Question Answering with Ambiguous Query<div class="tag knowledge-graph"></div></h3>
+                        <p class="authors">	Lihui Liu, Yuzhong Chen, Mahashweta Das, Hao Yang, Hanghang Tong</p>
+                        <p class="venue">The International World Wide Web Conference 2023, Austin, TX, USA <i>(WWW 2023)</i></p>
+                    </div>
+                </div>
+
+                <div class="publication-card data-mining">
+                    <div class="card-content" style="width: 100%;">
+                        <h3 class="title">PARROT: Position-Aware Regularized Optimal Transport for Network Alignment<div class="tag data-mining"></div></h3>
+                        <p class="authors">	Zhichen Zeng, Si Zhang, Yinglong Xia, Hanghang Tong</p>
+                        <p class="venue">The International World Wide Web Conference 2023, Austin, TX, USA <i>(WWW 2023)</i></p>
+                    </div>
+                </div>
+                
+
+            </section>
+
+        </div> 
+    </section>
+    
+
+    <footer id="footer" style="background-color: #002855;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-lg-left">
+                    <p>&copy; 2024 <a href="https://github.com/Violet24K" target="_blank" style="color: white; text-decoration: none;" onmouseover="this.style.color='#ff5f03';" onmouseout="this.style.color='white';">Violet24K</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- Vendor JS Files -->
+    <script src="static/vendor/aos/aos.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/publications.js"></script>
+    
+</body>
+
+</html>

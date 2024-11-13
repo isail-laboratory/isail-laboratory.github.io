@@ -1,0 +1,202 @@
+/* https://codepen.io/utilitybend/pen/bGvjLba */
+
+article-people {
+    width: 215pt;
+    height: 350pt;
+    --img-scale: 1.00;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: none;
+    background: rgba(238, 243, 243, 0.863);
+    transform-origin: center;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+  }
+  
+  article-people a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  /* basic article elements styling */
+  article-people h4 {
+    margin: 0 0 0 0;
+    font-size: 18pt;
+    margin-bottom: 2pt;
+    color: var(--title-color);
+    transition: color 0.2s ease-out;
+  }
+  
+  figure-people {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  article-people img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .article-body-people {
+    margin-top: -5pt;
+    padding: 20px;
+  }
+  
+  article-people a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28666e;
+  }
+  
+  article-people a:focus {
+    outline: 1px dotted #28666e;
+  }
+  
+  article-people a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.2s;
+  }
+  
+  /* using the has() relational pseudo selector to update our custom properties */
+  article-people:has(:hover, :focus) {
+    --img-scale: 1.04;
+    --title-color: #28666e;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.articles-people {
+  display: grid;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  article-people {
+    container: card/inline-size;
+  }
+  .article-body-people p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper-people {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body-people {
+    padding-left: 0;
+  }
+  figure-people {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure-people img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.emphasis {
+  font-weight: bold; /* Makes the text bold */
+  color: #ff5f03; /* Emphasizes with a red color */
+  font-size: 15pt; /* Increases font size */
+  margin-bottom: -20pt;
+}
+
+
+/*--------------------------------------------------------------
+# Alumni
+--------------------------------------------------------------*/
+.alumni-timeline {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-height: 1000px; /* Sets a max height for scrolling */
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.alumni-timeline h2 {
+  text-align: center;
+  font-size: 32px; /* Bigger heading */
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 3px solid #002855; /* Underline for heading */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.alumni-timeline h4 {
+  font-size: 15pt;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #ff5f03; /* Blue dot */
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #e0f0ff; /* Halo effect */
+}
+
+.alumni-link {
+  color: #002855; /* Blue color for links */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s; /* Smooth color change on hover */
+}
+
+.alumni-link:hover {
+  color: #ff5f03; /* Darker blue on hover */
+  text-decoration: underline; /* Adds underline on hover */
+}
