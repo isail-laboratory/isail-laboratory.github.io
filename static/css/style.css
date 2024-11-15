@@ -475,6 +475,13 @@ section {
     gap: 5px;
 }
 
+@media (max-width: 768px) {
+    .news-and-tweets {
+        flex-direction: column; /* Stacks news and tweets vertically */
+        gap: 20px; /* Adds more space between the two sections */
+    }
+}
+
 .card {
     background-color: white;
     border-radius: 10px; /* Rounds the corners */
