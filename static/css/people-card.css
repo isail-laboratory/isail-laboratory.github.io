@@ -99,9 +99,9 @@ article-people {
   article-people {
     container: card/inline-size;
   }
-  .article-body-people p {
+  /* .article-body-people p {
     display: none;
-  }
+  } */
 }
 
 @container card (min-width: 380px) {
