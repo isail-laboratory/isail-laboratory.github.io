@@ -130,6 +130,14 @@
     top: -1pt;
 }
 
+.tag.ai4science {
+    background-color: #c9312b;
+    color: white;
+}
+.tag.ai4science::before {
+    content: "ai4science";
+}
+
 
 .tag.bandit {
     background-color: #bb562e;
