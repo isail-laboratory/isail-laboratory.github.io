@@ -96,7 +96,10 @@ class PeopleLoader {
 
         const members = this.membersData[category] || [];
         if (members.length === 0) {
-            console.warn(`No data for category: ${category}`);
+            // Hide the empty section together with its heading
+            container.style.display = 'none';
+            const heading = container.previousElementSibling;
+            if (heading && heading.tagName === 'H2') heading.style.display = 'none';
             return;
         }
 
