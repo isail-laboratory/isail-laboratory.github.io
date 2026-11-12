@@ -578,6 +578,40 @@ section {
     border: 0;
   }
 
+  .responsive-iframe-wrapper[hidden] {
+    display: none;
+  }
+
+  /* Research Highlights year buttons (same look as the publication filters) */
+  .highlight-years {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .highlight-btn {
+    padding: 8px 22px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .highlight-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .highlight-btn.active {
+    background-color: #28a745;
+  }
+
   /* Optional: Adjust padding for smaller screens */
   @media screen and (max-width: 768px) {
     .responsive-iframe-wrapper {
