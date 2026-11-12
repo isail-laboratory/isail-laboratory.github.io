@@ -17,7 +17,7 @@ class PeopleLoader {
     async loadMembersData() {
         try {
             // First, load the members list
-            const listResponse = await fetch('current_members/members-list.json');
+            const listResponse = await fetch('current_members/members-list.json', { cache: 'no-cache' });
             if (!listResponse.ok) {
                 throw new Error(`Failed to load members list: ${listResponse.status}`);
             }
@@ -68,7 +68,7 @@ class PeopleLoader {
      */
     async loadMemberFile(url, category) {
         try {
-            const response = await fetch(url);
+            const response = await fetch(url, { cache: 'no-cache' });
             if (!response.ok) {
                 console.warn(`Failed to load ${url}: ${response.status}`);
                 return null;
